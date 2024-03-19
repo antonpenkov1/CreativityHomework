@@ -19,8 +19,8 @@ struct PaintingView: View {
             ZStack {
                 VStack {
                     Color(red: 0.1, green: 0.2, blue: 0.4)
-                    Color(red: 0.5, green: 0.30, blue: 0)
-                        .frame(height: 100)
+                    Color(red: 0.5, green: 0.30, blue: 0, opacity: 0.5)
+                        .frame(height: 110)
                 }
                 .ignoresSafeArea()
                 
@@ -79,7 +79,7 @@ struct PaintingView: View {
                 }
             }
         }
-        .background(.brown.opacity(0.7))
+        .background(.brown.opacity(0.6))
     }
     
     private func tapAction() {
